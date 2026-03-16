@@ -3,7 +3,7 @@
 ![Credit Risk Analysis](images/header.png)
 
 ## 📌 Project Overview
-This project, developed by **Zeynep Can** ([@zzeynepcan](https://github.com/zzeynepcan)), is a comprehensive data analysis and machine learning pipeline to evaluate loan default risk for banking customers. By analyzing financial and demographic indicators, the project aims to predict the likelihood of customers defaulting on their loans.
+This analysis was conducted as part of my financial analytics portfolio to demonstrate how machine learning can be leveraged in banking. By examining historical customer data—including income, credit history, and debt levels—the goal is to build a predictive model that identifies potential loan defaults before they happen.
 
 ## 💼 Business Problem
 Financial institutions face significant losses from loan defaults. Evaluating risk efficiently before issuing loans can minimize losses and optimize the portfolio. This project builds a realistic data-driven framework and predictive model to classify high-risk vs. low-risk customers based on their profiles, empowering banks to make informed lending decisions.
@@ -88,5 +88,13 @@ Customers are segmented into 'High', 'Medium', and 'Low' risk tiers based on Deb
    ```
 4. Run the scripts or explore the Jupyter Notebooks in the `notebooks/` directory.
 
-## 📈 Conclusion
-The machine learning pipeline established in this project effectively segments risky borrowers and provides actionable insights for financial organizations, significantly improving the safety and profitability of loan portfolios.
+## 📈 Conclusion & Future Work
+The current pipeline provides a solid foundation for credit risk assessment. By segmenting borrowers into clear risk tiers, financial institutions can make more data-driven lending decisions.
+
+**Future Improvements:**
+- Incorporating more granular features like monthly spending habits.
+- Testing more advanced ensemble models like XGBoost or LightGBM.
+- Developing a simple dashboard using Streamlit to interact with the model in real-time.
+
+---
+*Feel free to reach out for questions or collaborations!*

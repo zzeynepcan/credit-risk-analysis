@@ -14,14 +14,16 @@ def load_data(filepath='../data/sample_dataset.csv'):
 def handle_missing_values(df):
     """Fill or drop missing values appropriately depending on the column type."""
     print("Handling missing values...")
-    # Numerical data imputation with median
+    # For numerical columns, median is safer than mean if we have outliers
     for col in df.select_dtypes(include=[np.number]).columns:
         if df[col].isnull().sum() > 0:
+            print(f"Fixing missing values in {col}...")
             df[col].fillna(df[col].median(), inplace=True)
             
-    # Categorical data imputation with mode
+    # For categorical stuff, we just take the most frequent value
     for col in df.select_dtypes(exclude=[np.number]).columns:
         if df[col].isnull().sum() > 0:
+            print(f"Fixing categorical missing values in {col}...")
             df[col].fillna(df[col].mode()[0], inplace=True)
             
     print("Missing values handled.")

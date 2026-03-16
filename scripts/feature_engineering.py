@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 
 def calculate_dti(df):
-    """Calculate the Debt-to-Income (DTI) ratio."""
-    print("Calculating Debt-to-Income ratio (DTI)...")
-    # Avoid division by zero
+    """Calculate Debt-to-Income (DTI). This is a huge indicator for banks."""
+    print("Feature Extraction: Calculating DTI ratio...")
+    # Just a quick check to avoid any weird division by zero errors
     df['dti'] = np.where(df['income'] == 0, 0, df['debt_ratio'] / df['income'])
     return df
 
